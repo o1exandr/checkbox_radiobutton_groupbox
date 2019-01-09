@@ -46,7 +46,11 @@ namespace checkbox_radiobutton_groupbox
                 }
             }
 
-            lbDetails.Text = orderInfo;
+            // отримання обраного елемента (не індексу!)
+            if (listCarVendors != null)
+                orderInfo += "Марка: " + listCarVendors.SelectedItem + "\n";
+
+            lbOrder.Text = orderInfo;
         }
     }
 }

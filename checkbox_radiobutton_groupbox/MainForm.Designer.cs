@@ -38,6 +38,9 @@
             this.btOrder = new System.Windows.Forms.Button();
             this.checkedBoxRadioOptions = new System.Windows.Forms.CheckedListBox();
             this.lbSound = new System.Windows.Forms.Label();
+            this.lbOrder = new System.Windows.Forms.Label();
+            this.lbBrand = new System.Windows.Forms.Label();
+            this.listCarVendors = new System.Windows.Forms.ListBox();
             this.groupBoxColor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +62,7 @@
             this.groupBoxColor.Controls.Add(this.radioGreen);
             this.groupBoxColor.Location = new System.Drawing.Point(15, 45);
             this.groupBoxColor.Name = "groupBoxColor";
-            this.groupBoxColor.Size = new System.Drawing.Size(209, 82);
+            this.groupBoxColor.Size = new System.Drawing.Size(379, 47);
             this.groupBoxColor.TabIndex = 6;
             this.groupBoxColor.TabStop = false;
             this.groupBoxColor.Text = " Колір автомобіля ";
@@ -67,7 +70,7 @@
             // radioRed
             // 
             this.radioRed.AutoSize = true;
-            this.radioRed.Location = new System.Drawing.Point(114, 48);
+            this.radioRed.Location = new System.Drawing.Point(205, 19);
             this.radioRed.Name = "radioRed";
             this.radioRed.Size = new System.Drawing.Size(75, 17);
             this.radioRed.TabIndex = 9;
@@ -78,7 +81,7 @@
             // radioPink
             // 
             this.radioPink.AutoSize = true;
-            this.radioPink.Location = new System.Drawing.Point(114, 25);
+            this.radioPink.Location = new System.Drawing.Point(303, 19);
             this.radioPink.Name = "radioPink";
             this.radioPink.Size = new System.Drawing.Size(70, 17);
             this.radioPink.TabIndex = 8;
@@ -89,7 +92,7 @@
             // radioYellow
             // 
             this.radioYellow.AutoSize = true;
-            this.radioYellow.Location = new System.Drawing.Point(9, 48);
+            this.radioYellow.Location = new System.Drawing.Point(9, 19);
             this.radioYellow.Name = "radioYellow";
             this.radioYellow.Size = new System.Drawing.Size(65, 17);
             this.radioYellow.TabIndex = 7;
@@ -100,7 +103,7 @@
             // radioGreen
             // 
             this.radioGreen.AutoSize = true;
-            this.radioGreen.Location = new System.Drawing.Point(9, 25);
+            this.radioGreen.Location = new System.Drawing.Point(119, 19);
             this.radioGreen.Name = "radioGreen";
             this.radioGreen.Size = new System.Drawing.Size(68, 17);
             this.radioGreen.TabIndex = 6;
@@ -112,7 +115,7 @@
             // 
             this.lbDetails.AutoSize = true;
             this.lbDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbDetails.Location = new System.Drawing.Point(21, 249);
+            this.lbDetails.Location = new System.Drawing.Point(13, 211);
             this.lbDetails.Name = "lbDetails";
             this.lbDetails.Size = new System.Drawing.Size(123, 13);
             this.lbDetails.TabIndex = 7;
@@ -120,7 +123,7 @@
             // 
             // btOrder
             // 
-            this.btOrder.Location = new System.Drawing.Point(134, 357);
+            this.btOrder.Location = new System.Drawing.Point(298, 309);
             this.btOrder.Name = "btOrder";
             this.btOrder.Size = new System.Drawing.Size(90, 38);
             this.btOrder.TabIndex = 8;
@@ -138,26 +141,68 @@
             "Касетний програвач",
             "Тилова АС",
             "Ультра-бас (сабвуфер)"});
-            this.checkedBoxRadioOptions.Location = new System.Drawing.Point(15, 150);
+            this.checkedBoxRadioOptions.Location = new System.Drawing.Point(10, 112);
             this.checkedBoxRadioOptions.Name = "checkedBoxRadioOptions";
-            this.checkedBoxRadioOptions.Size = new System.Drawing.Size(209, 94);
+            this.checkedBoxRadioOptions.Size = new System.Drawing.Size(192, 94);
             this.checkedBoxRadioOptions.TabIndex = 9;
             // 
             // lbSound
             // 
             this.lbSound.AutoSize = true;
             this.lbSound.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbSound.Location = new System.Drawing.Point(17, 133);
+            this.lbSound.Location = new System.Drawing.Point(12, 95);
             this.lbSound.Name = "lbSound";
             this.lbSound.Size = new System.Drawing.Size(147, 13);
             this.lbSound.TabIndex = 10;
             this.lbSound.Text = "Опції звукової системи";
             // 
+            // lbOrder
+            // 
+            this.lbOrder.BackColor = System.Drawing.Color.White;
+            this.lbOrder.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbOrder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbOrder.Location = new System.Drawing.Point(10, 229);
+            this.lbOrder.Name = "lbOrder";
+            this.lbOrder.Size = new System.Drawing.Size(192, 118);
+            this.lbOrder.TabIndex = 11;
+            // 
+            // lbBrand
+            // 
+            this.lbBrand.AutoSize = true;
+            this.lbBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbBrand.Location = new System.Drawing.Point(220, 95);
+            this.lbBrand.Name = "lbBrand";
+            this.lbBrand.Size = new System.Drawing.Size(45, 13);
+            this.lbBrand.TabIndex = 12;
+            this.lbBrand.Text = "Марка";
+            // 
+            // listCarVendors
+            // 
+            this.listCarVendors.FormattingEnabled = true;
+            this.listCarVendors.Items.AddRange(new object[] {
+            "BMW",
+            "Caravan",
+            "Ford",
+            "Grand Am",
+            "Jeep",
+            "Jetta",
+            "Saab",
+            "Viper",
+            "Yugo"});
+            this.listCarVendors.Location = new System.Drawing.Point(223, 112);
+            this.listCarVendors.Name = "listCarVendors";
+            this.listCarVendors.Size = new System.Drawing.Size(171, 95);
+            this.listCarVendors.TabIndex = 13;
+            // 
             // fmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(236, 405);
+            this.ClientSize = new System.Drawing.Size(406, 360);
+            this.Controls.Add(this.listCarVendors);
+            this.Controls.Add(this.lbBrand);
+            this.Controls.Add(this.lbOrder);
             this.Controls.Add(this.lbSound);
             this.Controls.Add(this.checkedBoxRadioOptions);
             this.Controls.Add(this.btOrder);
@@ -186,6 +231,9 @@
         private System.Windows.Forms.Button btOrder;
         private System.Windows.Forms.CheckedListBox checkedBoxRadioOptions;
         private System.Windows.Forms.Label lbSound;
+        private System.Windows.Forms.Label lbOrder;
+        private System.Windows.Forms.Label lbBrand;
+        private System.Windows.Forms.ListBox listCarVendors;
     }
 }
 
