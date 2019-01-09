@@ -31,6 +31,21 @@ namespace checkbox_radiobutton_groupbox
             if (radioPink.Checked)
                 orderInfo += "А чому рожевий?\n";
 
+            // опції аудіосистеми
+            orderInfo += "- - - - - - - - - - - - - - - - - - - -\n";
+            // для кожного елемента
+            for (int i = 0; i < checkedBoxRadioOptions.Items.Count; i++)
+            {
+                // чи відмічено елемент?
+                if (checkedBoxRadioOptions.GetItemChecked(i))
+                {
+                    // додавання тексту елемента і додання до orderinfo
+                    orderInfo += "Опція аудіо: ";
+                    orderInfo += checkedBoxRadioOptions.Items[i].ToString();
+                    orderInfo += "\n";
+                }
+            }
+
             lbDetails.Text = orderInfo;
         }
     }
