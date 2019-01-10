@@ -65,7 +65,7 @@
             this.groupBoxColor.Location = new System.Drawing.Point(15, 45);
             this.groupBoxColor.Name = "groupBoxColor";
             this.groupBoxColor.Size = new System.Drawing.Size(379, 47);
-            this.groupBoxColor.TabIndex = 6;
+            this.groupBoxColor.TabIndex = 1;
             this.groupBoxColor.TabStop = false;
             this.groupBoxColor.Text = " Колір автомобіля ";
             // 
@@ -75,7 +75,7 @@
             this.radioRed.Location = new System.Drawing.Point(205, 19);
             this.radioRed.Name = "radioRed";
             this.radioRed.Size = new System.Drawing.Size(75, 17);
-            this.radioRed.TabIndex = 9;
+            this.radioRed.TabIndex = 2;
             this.radioRed.TabStop = true;
             this.radioRed.Text = "Червоний";
             this.radioRed.UseVisualStyleBackColor = true;
@@ -86,7 +86,7 @@
             this.radioPink.Location = new System.Drawing.Point(303, 19);
             this.radioPink.Name = "radioPink";
             this.radioPink.Size = new System.Drawing.Size(70, 17);
-            this.radioPink.TabIndex = 8;
+            this.radioPink.TabIndex = 3;
             this.radioPink.TabStop = true;
             this.radioPink.Text = "Рожевий";
             this.radioPink.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@
             this.radioYellow.Location = new System.Drawing.Point(9, 19);
             this.radioYellow.Name = "radioYellow";
             this.radioYellow.Size = new System.Drawing.Size(65, 17);
-            this.radioYellow.TabIndex = 7;
+            this.radioYellow.TabIndex = 0;
             this.radioYellow.TabStop = true;
             this.radioYellow.Text = "Жовтий";
             this.radioYellow.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@
             this.radioGreen.Location = new System.Drawing.Point(119, 19);
             this.radioGreen.Name = "radioGreen";
             this.radioGreen.Size = new System.Drawing.Size(68, 17);
-            this.radioGreen.TabIndex = 6;
+            this.radioGreen.TabIndex = 1;
             this.radioGreen.TabStop = true;
             this.radioGreen.Text = "Зелений";
             this.radioGreen.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             this.lbDetails.Location = new System.Drawing.Point(13, 211);
             this.lbDetails.Name = "lbDetails";
             this.lbDetails.Size = new System.Drawing.Size(123, 13);
-            this.lbDetails.TabIndex = 7;
+            this.lbDetails.TabIndex = 8;
             this.lbDetails.Text = "Деталі замовлення";
             // 
             // btOrder
@@ -128,7 +128,7 @@
             this.btOrder.Location = new System.Drawing.Point(298, 309);
             this.btOrder.Name = "btOrder";
             this.btOrder.Size = new System.Drawing.Size(90, 38);
-            this.btOrder.TabIndex = 8;
+            this.btOrder.TabIndex = 10;
             this.btOrder.Text = "Підтвердити замовлення";
             this.btOrder.UseVisualStyleBackColor = true;
             this.btOrder.Click += new System.EventHandler(this.btOrder_Click);
@@ -146,7 +146,7 @@
             this.checkedBoxRadioOptions.Location = new System.Drawing.Point(10, 112);
             this.checkedBoxRadioOptions.Name = "checkedBoxRadioOptions";
             this.checkedBoxRadioOptions.Size = new System.Drawing.Size(192, 94);
-            this.checkedBoxRadioOptions.TabIndex = 9;
+            this.checkedBoxRadioOptions.TabIndex = 5;
             // 
             // lbSound
             // 
@@ -155,7 +155,7 @@
             this.lbSound.Location = new System.Drawing.Point(12, 95);
             this.lbSound.Name = "lbSound";
             this.lbSound.Size = new System.Drawing.Size(147, 13);
-            this.lbSound.TabIndex = 10;
+            this.lbSound.TabIndex = 4;
             this.lbSound.Text = "Опції звукової системи";
             // 
             // lbOrder
@@ -167,7 +167,7 @@
             this.lbOrder.Location = new System.Drawing.Point(10, 229);
             this.lbOrder.Name = "lbOrder";
             this.lbOrder.Size = new System.Drawing.Size(192, 118);
-            this.lbOrder.TabIndex = 11;
+            this.lbOrder.TabIndex = 9;
             // 
             // lbBrand
             // 
@@ -176,7 +176,7 @@
             this.lbBrand.Location = new System.Drawing.Point(220, 95);
             this.lbBrand.Name = "lbBrand";
             this.lbBrand.Size = new System.Drawing.Size(45, 13);
-            this.lbBrand.TabIndex = 12;
+            this.lbBrand.TabIndex = 6;
             this.lbBrand.Text = "Марка";
             // 
             // listCarVendors
@@ -195,7 +195,7 @@
             this.listCarVendors.Location = new System.Drawing.Point(223, 112);
             this.listCarVendors.Name = "listCarVendors";
             this.listCarVendors.Size = new System.Drawing.Size(171, 95);
-            this.listCarVendors.TabIndex = 13;
+            this.listCarVendors.TabIndex = 7;
             // 
             // comboSalesPerson
             // 
@@ -208,7 +208,7 @@
             this.comboSalesPerson.Location = new System.Drawing.Point(223, 23);
             this.comboSalesPerson.Name = "comboSalesPerson";
             this.comboSalesPerson.Size = new System.Drawing.Size(169, 21);
-            this.comboSalesPerson.TabIndex = 14;
+            this.comboSalesPerson.TabIndex = 3;
             // 
             // lbSales
             // 
@@ -217,11 +217,12 @@
             this.lbSales.Location = new System.Drawing.Point(223, 5);
             this.lbSales.Name = "lbSales";
             this.lbSales.Size = new System.Drawing.Size(76, 13);
-            this.lbSales.TabIndex = 15;
+            this.lbSales.TabIndex = 2;
             this.lbSales.Text = "Продавець:";
             // 
             // fmMain
             // 
+            this.AcceptButton = this.btOrder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 360);
