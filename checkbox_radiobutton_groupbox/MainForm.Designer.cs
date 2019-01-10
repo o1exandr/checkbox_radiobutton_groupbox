@@ -41,6 +41,8 @@
             this.lbOrder = new System.Windows.Forms.Label();
             this.lbBrand = new System.Windows.Forms.Label();
             this.listCarVendors = new System.Windows.Forms.ListBox();
+            this.comboSalesPerson = new System.Windows.Forms.ComboBox();
+            this.lbSales = new System.Windows.Forms.Label();
             this.groupBoxColor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,11 +197,36 @@
             this.listCarVendors.Size = new System.Drawing.Size(171, 95);
             this.listCarVendors.TabIndex = 13;
             // 
+            // comboSalesPerson
+            // 
+            this.comboSalesPerson.FormattingEnabled = true;
+            this.comboSalesPerson.Items.AddRange(new object[] {
+            "Джон",
+            "Ден",
+            "Микола",
+            "Віктор"});
+            this.comboSalesPerson.Location = new System.Drawing.Point(223, 23);
+            this.comboSalesPerson.Name = "comboSalesPerson";
+            this.comboSalesPerson.Size = new System.Drawing.Size(169, 21);
+            this.comboSalesPerson.TabIndex = 14;
+            // 
+            // lbSales
+            // 
+            this.lbSales.AutoSize = true;
+            this.lbSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbSales.Location = new System.Drawing.Point(223, 5);
+            this.lbSales.Name = "lbSales";
+            this.lbSales.Size = new System.Drawing.Size(76, 13);
+            this.lbSales.TabIndex = 15;
+            this.lbSales.Text = "Продавець:";
+            // 
             // fmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 360);
+            this.Controls.Add(this.lbSales);
+            this.Controls.Add(this.comboSalesPerson);
             this.Controls.Add(this.listCarVendors);
             this.Controls.Add(this.lbBrand);
             this.Controls.Add(this.lbOrder);
@@ -234,6 +261,8 @@
         private System.Windows.Forms.Label lbOrder;
         private System.Windows.Forms.Label lbBrand;
         private System.Windows.Forms.ListBox listCarVendors;
+        private System.Windows.Forms.ComboBox comboSalesPerson;
+        private System.Windows.Forms.Label lbSales;
     }
 }
 

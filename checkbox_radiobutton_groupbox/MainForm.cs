@@ -50,6 +50,12 @@ namespace checkbox_radiobutton_groupbox
             if (listCarVendors != null)
                 orderInfo += "Марка: " + listCarVendors.SelectedItem + "\n";
 
+            // інфо по продавцю
+            if (comboSalesPerson.Text != "")
+                orderInfo += "Продавець: " + comboSalesPerson.Text + "\n";
+            else
+                orderInfo += "Ви не вказали ім'я продавця\n";
+
             lbOrder.Text = orderInfo;
         }
     }
