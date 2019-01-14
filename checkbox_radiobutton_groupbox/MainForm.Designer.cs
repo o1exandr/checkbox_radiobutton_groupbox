@@ -43,6 +43,7 @@
             this.listCarVendors = new System.Windows.Forms.ListBox();
             this.comboSalesPerson = new System.Windows.Forms.ComboBox();
             this.lbSales = new System.Windows.Forms.Label();
+            this.mthCalendar = new System.Windows.Forms.MonthCalendar();
             this.groupBoxColor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,9 +126,9 @@
             // 
             // btOrder
             // 
-            this.btOrder.Location = new System.Drawing.Point(298, 309);
+            this.btOrder.Location = new System.Drawing.Point(223, 394);
             this.btOrder.Name = "btOrder";
-            this.btOrder.Size = new System.Drawing.Size(90, 38);
+            this.btOrder.Size = new System.Drawing.Size(165, 28);
             this.btOrder.TabIndex = 10;
             this.btOrder.Text = "Підтвердити замовлення";
             this.btOrder.UseVisualStyleBackColor = true;
@@ -166,7 +167,7 @@
             this.lbOrder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbOrder.Location = new System.Drawing.Point(10, 229);
             this.lbOrder.Name = "lbOrder";
-            this.lbOrder.Size = new System.Drawing.Size(192, 118);
+            this.lbOrder.Size = new System.Drawing.Size(192, 193);
             this.lbOrder.TabIndex = 9;
             // 
             // lbBrand
@@ -220,12 +221,19 @@
             this.lbSales.TabIndex = 2;
             this.lbSales.Text = "Продавець:";
             // 
+            // mthCalendar
+            // 
+            this.mthCalendar.Location = new System.Drawing.Point(223, 229);
+            this.mthCalendar.Name = "mthCalendar";
+            this.mthCalendar.TabIndex = 11;
+            // 
             // fmMain
             // 
             this.AcceptButton = this.btOrder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 360);
+            this.ClientSize = new System.Drawing.Size(406, 434);
+            this.Controls.Add(this.mthCalendar);
             this.Controls.Add(this.lbSales);
             this.Controls.Add(this.comboSalesPerson);
             this.Controls.Add(this.listCarVendors);
@@ -264,6 +272,7 @@
         private System.Windows.Forms.ListBox listCarVendors;
         private System.Windows.Forms.ComboBox comboSalesPerson;
         private System.Windows.Forms.Label lbSales;
+        private System.Windows.Forms.MonthCalendar mthCalendar;
     }
 }
 

@@ -45,6 +45,7 @@ namespace checkbox_radiobutton_groupbox
                     orderInfo += "\n";
                 }
             }
+            orderInfo += "- - - - - - - - - - - - - - - - - - - -\n";
 
             // отримання обраного елемента (не індексу!)
             if (listCarVendors != null)
@@ -55,6 +56,11 @@ namespace checkbox_radiobutton_groupbox
                 orderInfo += "Продавець: " + comboSalesPerson.Text + "\n";
             else
                 orderInfo += "Ви не вказали ім'я продавця\n";
+            // отримання дати доставки
+            DateTime d = mthCalendar.SelectionStart;
+            string dateStr = string.Format("{0}.{1}.{2}",
+                d.Day, d.Month, d.Year);
+            orderInfo += "Машина повинна бути доставлена\n" + dateStr;
 
             lbOrder.Text = orderInfo;
         }
